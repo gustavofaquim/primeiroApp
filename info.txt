@@ -1,0 +1,19 @@
+
+
+# Iniciar o projeto ReactNative com Expo
+-> npx create-expo-app@latest --template
+    -> Selecionar typeScript
+
+# Apagar arquivos quem vem por padrão
+-> app, fonts, componentes, constants
+
+# Criar pasta 'src'
+
+# Criar pasta 'app' dentro de 'src' -> Por padrão o react-router olha para esse pasta
+
+# Criar 'index.tsx' dentro de app
+
+! Nomes de componentes começam com a primeira letra maiuscula
+
+
+# npx expo start -> testar app
