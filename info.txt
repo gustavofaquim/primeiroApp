@@ -17,3 +17,7 @@
 
 
 # npx expo start -> testar app
+
+
+
+#  ...rest pega todas as propriedades que não foram pegas diretamente

@@ -1,17 +1,27 @@
-import {View, Text, StyleSheet, Alert} from "react-native";
-import { Button } from "../components/button";
+import {View, Text, StyleSheet} from "react-native";
+import { Button } from "@/components/button";
+import { Input} from "@/components/input";
+import { useState } from "react";
+import { router } from "expo-router";
+
 export default function Index(){
 
+    const [nome, setNome] = useState("");
 
-    function handleMenssage(){
-         Alert.alert("Olá, Gustavo")
+    function handleNext(){
+       router.navigate("/dashboard")
     }
+
+
 
     return(
         <View style={styles.container}>
-            <Text style={styles.title}>Hello Wordl!</Text>
-            <Button title="Entrar"/>
-            <Button title="Sair"/>
+
+            <Text style={styles.title}>Olá, {nome}!</Text>
+
+            <Input onChangeText={setNome} />
+
+            <Button title="Continuar" onPress={handleNext}/>
 
         </View>
     )
